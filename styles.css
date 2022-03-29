@@ -1,0 +1,144 @@
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  margin: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+h1 {
+  color: hsl(238, 29%, 16%);
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(237, 12%, 33%);
+}
+
+p {
+  font-size: 14px;
+  color: hsl(240, 6%, 50%);
+  display: none;
+}
+
+hr {
+  border: solid hsl(240, 5%, 91%) 1px;
+  border-bottom: none;
+}
+
+/* CONTAINERS */
+.container {
+  background-color: white;
+  display: flex;
+  width: 70vw;
+  margin: 100px auto 0;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.questions-container {
+  display: flex;
+  justify-content: space-between;
+}
+/* IMAGES */
+.box {
+  position: absolute;
+  z-index: 1;
+  left: 75px;
+  top: 360px;
+  z-index: 2;
+}
+
+.woman {
+  position: relative;
+  left: -85px;
+  top: 130px;
+  z-index: 1;
+}
+
+.pattern {
+  width: 550px;
+  position: absolute;
+  left: -150px;
+  top: 80px;
+}
+
+/* FAQ SECTION */
+.faq {
+  padding: 7% 15% 7% 0;
+}
+
+.hover:hover {
+  cursor: pointer;
+  color: hsl(14, 88%, 65%);
+}
+
+.questions-container i {
+  align-self: center;
+  color: hsl(14, 88%, 65%);
+  margin-left: 40px;
+}
+
+/* CLICK EVENT */
+.show {
+  display: block;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* FOOTER */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 7%;
+}
+
+.attribution a {
+  color: hsl(228, 80%, 80%);
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 1000px) {
+  .container {
+    display: block;
+    padding: 7%;
+    overflow: visible;
+    margin-top: 200px;
+  }
+
+  .box {
+    width: 25%;
+    top: 140px;
+    left: 90px;
+  }
+
+  .woman {
+    top: -150px;
+    left: 55px;
+    width: 75%;
+    position: absolute;
+  }
+
+  .pattern {
+    top: -170px;
+    left: 55px;
+    width: 75%;
+  }
+
+  .faq {
+    padding-top: 30%;
+    padding-right: 0;
+  }
+
+  .faq h1 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 800px) {
+  .faq h1 {
+    text-align: left;
+  }
+}
